@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+    
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .signup-btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #e0a800;
+  }
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 20px;
+      margin-top: auto;
+      
+    }
+    .signup-btn1{
+      display: flex;
+      position: absolute;
+      transform: translateX(-300px);
+      width: 160px;
+    }
+  
+    .nav-links a {
+      width: 100%;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .nav-active {
+      display: flex;
+    }
+  
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .toggle .line2 {
+      opacity: 0;
+    }
+  
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  /* Card Container */
+  .card-cainter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 120px;
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  /* Image */
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Content */
+  .card .content {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  /* Title */
+  .card .content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+
+  /* Description */
+  .card .content p {
+    margin: 10px 0 0;
+    color: #666;
+  }
+
+  h2{
+font-family: 'Times New Roman', Times, serif;
+color: #e0a800;
+margin-top: 130px;
+text-align: center;
+margin-bottom: 2rem;
+margin-top: 8rem;
+
+  }
+  
+ /* Dropdown menu styles */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px ;
+}
+  .dropdown a:hover,
+  .nav-links a.active {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.dropbtn {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 10px;
+  position: absolute;
+  background-color: #6d6868;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffc107;
+  color: #141414;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffc107;
+  color: #171717;
+}
+
+.signup-btn1 {
+  display: flex;
+  position: absolute;
+  background-color: #ffc107;
+  color: #000;
+  margin-left: 500px;
+  margin-right:0px ;
+  margin-top: -70px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn1:hover {
+  background-color: #e0a800;
+}
+footer {
+  background-color: #8a8585;
+  color: #030303;
+  padding: 20px;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  text-align: left;
+  
+}
+
+.footer-section h4 {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.footer-section p {
+  color: #fff;
+  margin: 5px 0;
+  padding-right: 10px;
+
+}

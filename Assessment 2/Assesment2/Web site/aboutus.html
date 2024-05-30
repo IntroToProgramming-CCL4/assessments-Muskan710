@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us </title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Bison Contracting</div>
+      <div class="nav-links">
+        <a href="indexpage.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="projects.html">Our Projects</a>
+        <a href="services.html">Our Services</a>
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+      </div>
+    
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="img3.jpg" alt="Building Image">
+      <img src="img1.jpg" alt="Buliding ">
+      <img src="img2.jpg" alt="Buliding" height="200">
+    </div>
+    <div class="content">
+      <h1>About us</h1>
+      <h2>Efficiency, Building, Budget & Time</h2>
+      <p>Bison Contracting L.L.C provides a wide range of services to its
+        customers Ranging from
+        Industrial/ Commercial Building
+        Construction to Design &amp; Built Turnkey
+        Interior Fit out. Our goal is simple and
+        well defined: provide outstanding value
+        by consistently producing excellent
+        results and giving clients the maximum
+        return on their investment &amp;
+        maximum productivity.
+        Projects are approached at the outset by
+        gaining a thorough understanding of
+        client needs and budget parameters.
+        When work begins, the keywords that
+        underlie the construction process are
+        &quot;innovation&quot; and &quot;efficiency&quot;. Jobs are
+        carefully orchestrated, with special
+        attention always being paid to
+        completion schedules, code adherence
+        and, of course, quality control.
+        At a time when building industry has
+        never been more expensive, BISON
+        came with the goal and singular purpose
+        of creating quality projects of exceptional
+        value.
+        For the success of the project , we ensure
+        a seamless work progression which is
+        charted out in our Project management
+        procedure and activity schedule. Our
+        proactive competent team guarantees
+        on time delivery of the highest quality
+        service and product.</p>
+      <!-- Add your services or additional content here -->
+        <h2>Our Mission</h2>
+        <p>To help organizations reap the
+                    benefits of sustainability for
+                    Offices &amp; residences through
+                    world-class environmental
+                    ratings, by enhancing operational
+                    efficiency and cultivating
+                    healthier, happier spaces keeping
+                    our valuable clients interest in
+                    mind.</p>
+        <h2>Our Vision</h2>
+        <p>A world where every space exists
+                      in symphony with nature and
+                      effortlessly resonates with our
+                      environment.
+                      A total solution provider our
+                      capabilities encompass virtually all
+                      aspects of a project including
+                      sustainability and resource
+                      conservation. Though we enrich all
+                      our projects with sound
+                      environmental and energy
+                      efficiency principles, what sets us
+                      apart is our ability to execute
+                      sustainable interiors and assist
+                      our clients with best environment
+                      available .</p>
+      
+
+    </div>
+  </div>
+  <a href="signup.html" class="signup-btn1">Contect Us Now</a>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>DUBAI</h4>
+        <p>P.O. BOX:- 79081, Dubai, U.A.E</p>
+        <p>T: +971 (04) 220 55 59</p>
+        <p>F: +971 (04) 220 55 58</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Personnel</h4>
+        <p>Engr Asif</p>
+        <p>Managing Director</p>
+        <p>M: +971 (50) 241 8830</p>
+        <p>E Mail: bisoncont@yoo.com</p>
+        </div>
+        <div class="footer-section">
+        <h4>Location</h4>
+        <p>office #202 | Al Sumula Building| AL Quoz|Dubai UAE</p>
+      </div>
+  
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script>
+        const navLinks = document.querySelector('.nav-links');
+        const burger = document.querySelector('.burger');
+        const header = document.querySelector('header');
+        
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('nav-active');
+          burger.classList.toggle('toggle');
+        });
+        
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > header.offsetHeight + 150) {
+            header.classList.add('sticky');
+          } else {
+            header.classList.remove('sticky');
+          }
+        });
+      </script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+              
+              

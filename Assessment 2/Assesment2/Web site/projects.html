@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project </title>
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+  <header>
+    
+    <nav>
+      <div class="logo">Bison Contracting</div>
+      <div class="nav-links">
+        <a href="indexpage.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="projects.html">Our projects</a>
+        <a href="services.html">Our Services</a>
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+      </div>
+    
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    </header>
+    
+    <main>
+
+      <h1>Our Projects</h1>
+      <div class="project-grid">
+        <div class="project-item">
+          <img src="pro1.jpg" alt="project 1".>
+          <div class="project-overlay">
+            <h3>Major Steel Fabrication Projects</h3>
+            <p>Description of Project 1</p>
+            <a href="project1.html" class="project-link">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <img src="img3.jpg" alt="Project 2">
+          <div class="project-overlay">
+            <h3>Major Interior Projects</h3>
+            <p>Description of Project 2</p>
+            <a href="project2.html" class="project-link">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <img src="img2.jpg" alt="Project 3">
+          <div class="project-overlay">
+            <h3>Major construction Projects</h3>
+            <p>Description of Project 3</p>
+            <a href="project3.html" class="project-link">Learn More</a>
+          </div>
+          </div>
+
+          <div class="project-item">
+            <img src="latest.jpg" alt="Project 4">
+            <div class="project-overlay">
+              <h3>Our latest Projects</h3>
+              <p>Description of Project 4</p>
+              <a href="project4.html" class="project-link">Learn More</a>
+            </div>
+          </div>
+      </div>
+
+<a href="signup.html" class="signup-btn1">Contect Us Now</a>
+</main>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>DUBAI</h4>
+            <p>P.O. BOX:- 79081, Dubai, U.A.E</p>
+            <p>T: +971 (04) 220 55 59</p>
+            <p>F: +971 (04) 220 55 58</p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Personnel</h4>
+            <p>Engr Asif</p>
+            <p>Managing Director</p>
+            <p>M: +971 (50) 241 8830</p>
+            <p>E Mail: bisoncont@yoo.com</p>
+            </div>
+            <div class="footer-section">
+            <h4>Location</h4>
+            <p>office #202 | Al Sumula Building| AL Quoz|Dubai UAE</p>
+          </div>
+      
+        </div>
+      </footer>
+  
+
+    
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        const burger = document.querySelector('.burger');
+        const header = document.querySelector('header');
+        
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('nav-active');
+          burger.classList.toggle('toggle');
+        });
+        
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > header.offsetHeight + 150) {
+            header.classList.add('sticky');
+          } else {
+            header.classList.remove('sticky');
+          }
+        });
+          </script>
+        
+  </body>
+  </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project3</title>
+  <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Bison Contracting</div>
+      <div class="nav-links">
+        <a href="indexpage.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+
+        <div class="dropdown">
+          <a href="projects.html" class="dropbtn">Our Projects</a>
+          <div class="dropdown-content">
+            <a href="project1.html">Major Steel Fabrication Projects</a>
+            <a href="project2.html">Major Interior Projects</a>
+            <a href="project3.html">Major Construction Projects</a>
+            <a href="project4.html">Our Latest Projects</a>
+          </div>
+        </div>
+        
+        <a href="services.html">Our Services</a>
+       
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+      </div>
+    
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2>Major Construction Projects</h2>
+    <div class="card-cainter">
+        <div class="card">
+            <img src="wearhouse.jpeg" alt="Placeholder Image">
+            <div class="content">
+              <h3>wearhouse</h3>
+              <p> This project is about working for M/s. Oubari Gulf FZC,The scope of work is to construct warehouse and showrooms 2107.</p>
+            </div>
+          </div>
+        
+          <div class="card">
+              <img src="service.jpeg" alt="Placeholder Image">
+              <div class="content">
+                <h3>Service block</h3>
+                <p> This project is about working for M/s. Indus International FZE,The scope of work is design and proposed Service Block and Boundary wall 2017</p>
+              </div>
+            </div>
+    
+            <div class="card">
+                <img src="block.png" alt="Placeholder Image">
+                <div class="content">
+                  <h3>Office block</h3>
+                  <p>This project is about working for Mr. Saeed Salim, The scope of work is design and propsosed Office Block and Boundary Wall 2018.</p>
+                </div>
+              </div>
+      
+              <div class="card">
+                <img src="office1.png" alt="Placeholder Image">
+                <div class="content">
+                  <h3>Title</h3>
+                  <p>This project is about working forMr. Khalid Al Suwedi,The scope of work is to design and Construct Service Station &amp; Boundary Wall 2016.</p>
+                </div>
+              </div>
+      
+              <div class="card">
+                <img src="villa.png" alt="Placeholder Image">
+                <div class="content">
+                  <h3>Title</h3>
+                  <p>This project is about working for Mr. Hassan Al Rashami, The scope of work is the Construction of G+1 Villa 2016</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="office.png" alt="Placeholder Image">
+                <div class="content">
+                  <h3>Title</h3>
+                  <p>This project is about working for Mr Salim Al Maheiri, The scope of work is to design Office Block and Boundary Wall 2017.</p>
+                </div>
+              </div>
+    </div>
+    <a href="signup.html" class="signup-btn1">Contect Us Now</a>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>DUBAI</h4>
+          <p>P.O. BOX:- 79081, Dubai, U.A.E</p>
+          <p>T: +971 (04) 220 55 59</p>
+          <p>F: +971 (04) 220 55 58</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Personnel</h4>
+          <p>Engr Asif</p>
+          <p>Managing Director</p>
+          <p>M: +971 (50) 241 8830</p>
+          <p>E Mail: bisoncont@yoo.com</p>
+          </div>
+          <div class="footer-section">
+          <h4>Location</h4>
+          <p>office #202 | Al Sumula Building| AL Quoz|Dubai UAE</p>
+        </div>
+    
+      </div>
+    </footer>
+    </main>
+
+
+
+
+  <script>
+    const navLinks = document.querySelector('.nav-links');
+    const burger = document.querySelector('.burger');
+    const header = document.querySelector('header');
+    
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > header.offsetHeight + 150) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+      </script>
+</body>
+</html>
